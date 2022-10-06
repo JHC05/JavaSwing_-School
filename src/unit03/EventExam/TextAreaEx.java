@@ -50,4 +50,4 @@ public class TextAreaEx extends JFrame implements ActionListener{
 		
 	}
 
-}
+}//변경점저장

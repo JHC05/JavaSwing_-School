@@ -84,4 +84,4 @@ public class CheckBoxItemEventEx extends JFrame implements ItemListener {
 	}
 
 
-}
+}//변경점저장

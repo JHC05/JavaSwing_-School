@@ -78,4 +78,4 @@ public class SwingCounter extends JFrame implements ActionListener{
 		
 	}
 
-}
+}//변경점저장
