@@ -75,35 +75,30 @@ public class SwingLogin extends JFrame implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		
-		
+				
 		if(e.getSource() == btnLogin) {
-			String strid = tfid.getText();
-			String strpwd = new String(tfPwd.getPassword());
+			String strId = tfid.getText();
+			String strpsw = new String(tfPwd.getPassword()); // 겟페스워드가 char여서 Str로 바꿔줌
 			
-			
-			if(strid.length() == 0) {
+			if(strId.length() == 0) {
 				lbResult.setText("아이디를 입력하세요");
 			}
 			
-			else if(strpwd.length() == 0) {
+			else if(strpsw.length() == 0) {
 				lbResult.setText("비밀번호를 입력하세요");
 			}
 			
 			else {
-				lbResult.setText(strid+"님의 비밀번호는"+strpwd+"입니다");
+				lbResult.setText(strId+"님의 비밀번호는"+strpsw+"입니다");
 			}
-			
 		}
-		
-		
 		
 		else if(e.getSource() == btnCancel) {
-			lbResult.setText("취소하였습니다.");//텍스트 재설정
-			tfid.setText("");
+			lbResult.setText("취소하였습니다."); 
+			tfid.setText("");	//텍스트 재설정
 			tfPwd.setText("");
 		}
-			
+		
 		
 	}
 
