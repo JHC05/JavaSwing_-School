@@ -28,6 +28,12 @@ public class SwingCoffee extends JFrame implements ItemListener{
 		
 		add(sp, BorderLayout.SOUTH);
 		
+		//버튼 그룹(중복선택 안되게)
+		ButtonGroup rg = new ButtonGroup();
+		rg.add(ame);
+		rg.add(capu);
+		rg.add(latte);
+		
 		
 		ame.addItemListener(this);
 		latte.addItemListener(this);
